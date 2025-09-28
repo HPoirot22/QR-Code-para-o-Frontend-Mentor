@@ -1,0 +1,95 @@
+/* 1. Reset Básico e Estilo do Corpo */
+body {
+    /* Define uma cor de fundo clara para a página inteira */
+    background-color: #d4e3ec; 
+    /* Remove margens e padding padrão */
+    margin: 0;
+    padding: 0;
+    /* Define uma fonte amigável (o ideal seria carregar a fonte específica do design) */
+    font-family: Arial, sans-serif;
+    /* Centralização perfeita do cartão na tela usando Flexbox */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    min-height: 100vh;      /* Garante que o corpo ocupe 100% da altura da viewport */
+}
+
+/* 2. Estilo do Cartão Principal */
+.card-container {
+    /* Largura fixa do cartão. Ajuste conforme o design. */
+    width: 320px; 
+    /* Cor de fundo branca */
+    background-color: hsl(0, 0%, 100%); 
+    /* Arredondamento das bordas */
+    border-radius: 20px; 
+    /* Adiciona uma sombra suave para dar profundidade */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); 
+    /* Adiciona um padding interno para afastar o conteúdo das bordas do cartão */
+    padding: 20px;
+    /* Para telas muito pequenas, garante que o cartão não seja maior que a tela */
+    max-width: 90%; 
+}
+
+/* 3. Estilo da Imagem/Seção do QR Code */
+.qr-code-section {
+    /* Cor de fundo azul como na imagem original */
+    background-color: hsl(220, 15%, 55%); /* Usei um azul de exemplo */
+    /* Arredondamento para o container do QR Code */
+    border-radius: 10px;
+    /* Garante que a imagem se ajuste ao container */
+    overflow: hidden; 
+}
+
+.qr-code-section img {
+    /* Garante que a imagem ocupe 100% da largura do seu container */
+    width: 100%;
+    /* Garante que a imagem mantenha sua proporção e não exceda a altura */
+    display: block; 
+}
+
+/* 4. Estilo do Conteúdo de Texto */
+.text-content {
+    /* Centraliza o texto */
+    text-align: center;
+    /* Adiciona um padding para o espaçamento interno do texto */
+    padding: 20px 10px 10px 10px; 
+}
+
+/* 5. Estilo do Título (h1) */
+.text-content h1 {
+    /* Cor escura para o título */
+    color: hsl(218, 44%, 22%); 
+    /* Tamanho e peso da fonte */
+    font-size: 22px; 
+    font-weight: 700;
+    /* Pequeno espaçamento abaixo */
+    margin-bottom: 15px; 
+}
+
+/* 6. Estilo do Parágrafo (p) */
+.text-content p {
+    /* Cor mais clara para o parágrafo */
+    color: hsl(220, 15%, 55%); 
+    /* Tamanho da fonte e peso */
+    font-size: 15px;
+    font-weight: 400;
+    /* Remove a margem inferior para o espaçamento final */
+    margin-bottom: 0;
+}
+
+/* 7. Estilo da Atribuição (Footer) */
+.attribution {
+    /* Fixa o footer na viewport */
+    position: fixed; 
+    
+    /* Posição: 0 na parte inferior, esquerda e direita */
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    
+    /* Garante que o footer flutue sobre o conteúdo */
+    z-index: 100; 
+
+    /* Centraliza o texto e elementos inline dentro do footer */
+    text-align: center; 
+}
